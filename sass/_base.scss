@@ -1,0 +1,58 @@
+////////////////////////////////
+/// color////////////////
+
+$color-black: black;
+$color-white: white;
+
+
+$color-grey-light: grey;
+$color-grey-medium: #2e2e2e;
+$color-grey-dark: #181818;
+
+$color-blue-light: #275fc4;
+$color-blue-medium: #26374e;
+$color-blue-dark: #151e2b;
+
+////////////////////////
+/// fonts///////////
+
+$font-primary: 'EB Garamond', serif;
+$font-secondary: 'Abril Fatface', sans-serif;
+
+////////////////////////////
+/// responsive breakpoints/////
+
+$bp-largest: 75em; //1200px
+$bp-large: 62.5em; //1000px
+$bp-medium: 56.25em; //900px
+$bp-small: 50em; //800px
+//$bp-smallest: 37.5em; //600px <-- for fremtiden
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; // now 1rem = 10px
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: $color-grey-dark;
+}
+
+.content {
+    width: 120rem;
+    margin: auto;
+    
+    @media only screen and(max-width: $bp-largest){
+        max-width: 100%;
+        width: 100%;
+        margin: 0;
+        overflow-x: hidden;
+    }
+}

@@ -1,0 +1,42 @@
+.user-content{
+    width: 80%;
+    margin: 0 auto;;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+
+    margin-top: 5rem;
+}
+
+.profile-picture{
+    width: 20rem;
+    height: 30rem;
+    background-color: rgb(80, 64, 42);
+}
+
+.user-info{
+    display: grid;
+    grid-template-rows: min-content 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.ach-earned{
+    width: 100%;
+    height: 30rem;
+    background-color: rgb(80, 64, 42);
+    margin-bottom: 5rem;
+}
+
+.watched-recent{
+    width: 100%;
+    height: 40rem;
+    background-color: rgb(80, 64, 42);
+    margin-bottom: 5rem;
+}
+
+.watch-list{
+    width: 100%;
+    height: 40rem;
+    background-color: rgb(80, 64, 42);
+    margin-bottom: 5rem;
+}

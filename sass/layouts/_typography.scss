@@ -1,0 +1,190 @@
+.header-container{
+    width: 100%;
+    height: min-content;
+
+    display: grid;
+    grid-template-rows: 3rem 2.3rem 2rem;
+    grid-template-columns: 5% min-content 1fr;
+    // grid-template-rows: repeat(3, min-content);
+    // grid-template-columns: min-content 1fr;
+
+    @media only screen and(max-width: $bp-largest){
+        width: 95%;
+        margin: auto;
+    }
+}
+
+.header-line-1,
+.header-line-2,
+.header-line-3,
+.header-line-4{
+    width: 1fr;
+    height: 1px;
+    background-color: rgb(216, 216, 216);
+}
+
+.header-line-1{
+    margin-top: .6rem;
+    margin-left: 1rem;
+    grid-row-start: 1;
+    grid-column-start: 3;
+}
+
+.header-line-2{
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+.header-line-3{
+    grid-row-start: 3;
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+.header-line-4{
+    margin-top: .6rem;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+
+.header-1 {
+    font-family: $font-primary;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: white;
+    padding: 1rem;
+
+    @media only screen and(max-width: $bp-largest){
+        font-size: 5rem;
+    }
+
+    @media only screen and(max-width: $bp-medium){
+        font-size: 4rem;
+    }
+
+    @media only screen and(max-width: $bp-small){
+        font-size: 3.5rem;
+        white-space: nowrap;
+    }
+
+    // @media only screen and(max-width: $bp-smallest){
+    //     font-size: 2rem;
+    //     line-height: 4rem;
+    // }
+}
+
+.header-2 {
+    font-family: $font-primary;
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 6rem;
+    text-align: left;
+    padding-left: 8rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+    color: white;
+
+    @media only screen and(max-width: $bp-large){
+        font-size: 3rem;
+    }
+
+    @media only screen and(max-width: $bp-medium){
+        font-size: 2.5rem;
+        line-height: 5.5rem;
+    }
+
+    @media only screen and(max-width: $bp-small){
+        font-size: 2.5rem;
+        line-height: 5rem;
+        white-space: nowrap;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    // @media only screen and(max-width: $bp-smallest){
+    //     font-size: 2rem;
+    //     line-height: 4rem;
+    // }
+
+}
+
+.header-3 {
+    font-family: $font-secondary;
+    font-weight: 400;
+    letter-spacing: .3rem;
+    font-size: 1.8rem;
+    text-align: left;
+    text-transform: uppercase;
+    color: rgb(238, 238, 238);
+    padding-left: 1rem;
+
+    grid-row-start: 1;
+    grid-column-start: 2;
+
+    white-space: nowrap;
+}
+
+.header-4{
+    font-family: $font-secondary;
+    font-weight: 400;
+    font-size: 3.5rem;
+    padding-left: 8rem;
+    text-align: left;
+    color: white;
+}
+
+.explain-header{
+    font-size: 1.3rem;
+    color: white;
+    margin-bottom: .7rem;
+    text-transform: uppercase;
+}
+
+.explain-text{
+    font-size: 1.2rem;
+    color: white;
+}
+
+
+//////////////////////////
+///USER OAGE/////////////
+
+.score-text,
+.score-points,
+.logged-text,
+.films-logged{
+    font-size: 2rem;
+    color: white;
+    justify-self: center;
+}
+
+.score-text,
+.logged-text{
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+}
+
+.score-text{
+    grid-row-start: 2;
+    grid-column-start: 1;
+}
+
+.score-points{
+    grid-row-start: 3;
+    grid-column-start: 1;
+}
+
+.logged-text{
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+.films-logged{
+    grid-row-start: 3;
+    grid-column-start: 2;
+}
