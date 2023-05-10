@@ -1,34 +1,36 @@
 a:link,
-:visited, 
+:visited,
 :hover,
-:active {text-decoration: none;
-color: white}
+:active {
+  text-decoration: none;
+  color: white;
+}
 
 .btn-1 {
-    width: 15rem;
-    border-radius: 5px;
-    background-color: #5d92db;
-    position: relative;
+  width: 15rem;
+  border-radius: 5px;
+  background-color: $color-blue-light-1;
+  position: relative;
 
-    border: none;
-    margin-top: 1rem;
-    padding: 1rem 1rem;
-    font-size: 2rem;
-    text-decoration: none;
-    color: white;
-    white-space: nowrap;
-    text-align: center;
-    left: 8rem;
-    cursor: pointer;
+  border: none;
+  margin-top: 1rem;
+  padding: 1rem 1rem;
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+  white-space: nowrap;
+  text-align: center;
+  left: 8rem;
+  cursor: pointer;
 
-    &:hover{
-        transform: scale(105%);
-        background-color: #77a7eb;
-    }
+  &:hover {
+    transform: scale(105%);
+    background-color: $color-blue-light-2;
+  }
 
-    @media only screen and(max-width: $bp-small){
-        left: 0;
-    }
+  @media only screen and(max-width: $bp-small) {
+    left: 0;
+  }
 }
 
 /////////////////////
@@ -36,76 +38,76 @@ color: white}
 
 .pre-btn,
 .nxt-btn {
-    border: none;
-    width: 7rem;
-    height: 7rem; //ret den her!!!!!
-    position: absolute;
-    top: 45%;
+  border: none;
+  width: 7rem;
+  height: 7rem;
+  position: absolute;
+  top: 45%;
 
-    background-color: black;
-    cursor: pointer;
-    z-index: 100;
+  background-color: black;
+  cursor: pointer;
+  z-index: 100;
 
-    @media only screen and(max-width: $bp-largest){
-        display: none;
-        opacity: 0;
-    }
+  @media only screen and(max-width: $bp-largest) {
+    display: none;
+    opacity: 0;
+  }
 }
 
 .pre-btn {
-    left: 0;
-    transform: rotate(180deg);
+  left: 0;
+  transform: rotate(180deg);
 }
 
 .nxt-btn {
-    right: 0;
+  right: 0;
 }
 
 .pre-btn img,
 .nxt-btn img {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .pre-btn:hover img,
 .nxt-btn:hover img {
-    opacity: 1;
+  opacity: 1;
 }
 
 .Watched-btn {
-    font-family: $font-primary;
-    width: 70%;
-    height: 2.5rem;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: .5rem auto;
-    background-color: rgb(76, 177, 76); ///ret den her!!!
-    cursor: pointer;
+  font-family: $font-primary;
+  width: 70%;
+  height: 2.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem auto;
+  background-color: $color-green-light-1;
+  cursor: pointer;
 
-    &:hover {
-        background-color: rgb(125, 209, 125);
-    }
+  &:hover {
+    background-color: $color-green-light-2;
+  }
 }
 
 .Watch-btn {
-    font-family: $font-primary;
-    width: 70%;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: black;
-    padding: .5rem;
-    margin: .5rem auto;
-    background-color: rgb(76, 177, 76); ///ret den her!!!
-    cursor: pointer;
+  font-family: $font-primary;
+  width: 70%;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: black;
+  padding: 0.5rem;
+  margin: 0.5rem auto;
+  background-color: $color-green-light-1;
+  cursor: pointer;
 
-    &:hover {
-        background-color: rgb(125, 209, 125);
-    }
+  &:hover {
+    background-color: $color-green-light-2;
+  }
 }
 
-.btn-active{
-    background-color: rgb(130, 218, 130);
+.btn-active {
+  background-color: $color-green-light-3;
 }

@@ -1,56 +1,57 @@
 .navbar {
+  display: flex;
+  width: 120rem;
+  height: 5rem;
+  margin: auto;
+
+  justify-content: space-around;
+
+  background-image: linear-gradient(
+    90deg,
+    $color-grey-dark,
+    $color-grey-medium
+  );
+
+  &-logo {
+    font-family: $font-secondary;
+    font-weight: 400;
+    letter-spacing: 0.3rem;
+    font-size: 3rem;
+    color: white;
+    padding-top: 1rem;
+    text-decoration: none;
+
+    @media only screen and(max-width: $bp-largest) {
+      padding-top: 0.5rem;
+    }
+  }
+
+  &-links {
     display: flex;
-    width: 120rem;
-    height: 5rem;
-    margin: auto;
+    justify-content: center;
+    text-decoration: none;
 
-    justify-content: space-around;
+    padding-top: 1.5rem;
 
-    //background-color: $color-blue-medium;
-    background-image: linear-gradient(90deg, #181818, #2e2e2e);
+    & li,
+    a {
+      font-family: $font-primary;
+      font-size: 1.5rem;
+      font-weight: 300;
+      color: white;
+      text-decoration: none;
+      display: inline-block;
+      padding: 0 2rem;
 
-    &-logo {
-        font-family: $font-secondary;
-        font-weight: 400;
-        letter-spacing: .3rem;
-        font-size: 3rem;
-        color: white;
-        padding-top: 1rem;
-        text-decoration: none;
-
-        @media only screen and(max-width: $bp-largest){
-            padding-top: .5rem;
-        }
+      &:hover {
+        scale: 1.1;
+        transform: translate(0, -2%);
+        filter: drop-shadow(0 5px 10px rgba(black, 0.6));
+      }
     }
+  }
 
-    &-links {
-        display: flex;
-        justify-content: center;
-        text-decoration: none;
-
-        padding-top: 1.5rem;
-
-        & li,
-        a {
-            font-family: $font-primary;
-            font-size: 1.5rem;
-            font-weight: 300;
-            color: white;
-            text-decoration: none;
-            display: inline-block;
-            padding: 0 2rem;
-
-            &:hover {
-                scale: 1.1;
-                transform: translate(0, -2%);
-                filter: drop-shadow(0 5px 10px rgba(black, .6));
-            }
-        }
-
-    }
-
-    @media only screen and(max-width: $bp-largest){
-        width: 100%;
-    }
-
+  @media only screen and(max-width: $bp-largest) {
+    width: 100%;
+  }
 }
