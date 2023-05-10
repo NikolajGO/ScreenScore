@@ -634,8 +634,7 @@ const closePopup = function () {
   overlay.classList.add("hidden");
 };
 
-//overlay.addEventListener("click", closePopup);
-//closepopup-knap fjernet
+overlay.addEventListener("click", closePopup);
 
 document.addEventListener("keydown", function (e) {
   if (e.key === "Escape" && !achPopup.classList.contains("hidden")) {
