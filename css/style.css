@@ -391,6 +391,7 @@ a:link,
   flex: 0 0 auto;
   width: 18rem;
   height: 42rem;
+  background-color: #585858;
   border-radius: 2px;
   margin: 1rem;
   overflow: hidden;

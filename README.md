@@ -4,3 +4,5 @@ A Website where you earn achievements by watching movies. Click the movies you h
 
 the website is a continuing work in progress.
 future plans are to implement an API, store achievements and code them dynamic, and create a loggin function and display, points, achievements and watchlist on the user site.
+
+the page is partially made responsive.
