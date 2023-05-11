@@ -52,6 +52,10 @@
       margin: 0 auto;
       justify-content: center;
     }
+
+    @media only screen and (max-width: $bp-small-3) {
+      grid-column-gap: 2rem;
+    }
   }
 }
 
@@ -68,14 +72,17 @@
 .achievement-div {
   width: 10rem;
   height: 13rem;
-  //height: 30rem;
   position: relative;
   border-radius: 10px;
-  //background-color: greenyellow;
   box-shadow: 5px 10px 10px rgba(black, 0.6);
   overflow: hidden;
   cursor: pointer;
   transition: 0.3s;
+
+  @media only screen and (max-width: $bp-small-3) {
+    width: 8rem;
+    height: 10rem;
+  }
 
   &:hover {
     transform: scale(150%);
@@ -84,7 +91,7 @@
   }
 
   &-img {
-    width: 10rem;
+    width: 100%;
     position: absolute;
     z-index: 1;
     transition: 0.5s;
