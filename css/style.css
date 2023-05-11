@@ -54,7 +54,7 @@ body {
         grid-row-gap: 2rem;
         margin: 0 auto;
         justify-content: center; } }
-    @media only screen and (max-width: 43.75em) {
+    @media only screen and (max-width: 37.5em) {
       .achievements-pop-content {
         grid-template-columns: repeat(3, min-content);
         grid-template-rows: repeat(2, min-content);
@@ -62,7 +62,7 @@ body {
         margin: 0 auto;
         justify-content: center; } }
 
-@media only screen and (max-width: 43.75em) {
+@media only screen and (max-width: 37.5em) {
   .achievements-pop-content .achievement-div:nth-child(3) {
     display: none; } }
 
@@ -193,6 +193,9 @@ a:link,
   cursor: pointer; }
   .Watch-btn:hover {
     background-color: #7dd17d; }
+  @media only screen and (max-width: 31.25em) {
+    .Watch-btn {
+      display: none; } }
 
 .btn-active {
   background-color: #82da82; }
@@ -264,6 +267,22 @@ a:link,
   @media only screen and (max-width: 75em) {
     .navbar {
       width: 100%; } }
+
+.burger-menu {
+  width: 5rem;
+  height: min-content;
+  z-index: 1000;
+  padding-top: 1rem;
+  display: none;
+  cursor: pointer; }
+  .burger-menu-line {
+    width: 1fr;
+    height: 1px;
+    background-color: #d8d8d8;
+    margin: 0.8rem; }
+  @media only screen and (max-width: 50em) {
+    .burger-menu {
+      display: block; } }
 
 /* popup */
 .achpopup-box {
@@ -412,15 +431,29 @@ a:link,
   overflow: hidden;
   text-align: center;
   font-size: 1.2rem; }
+  @media only screen and (max-width: 43.75em) {
+    .film {
+      width: 14rem;
+      height: 33rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .film {
+      width: 14rem;
+      height: 30rem; } }
   .film:hover {
     background-color: #888888; }
   .film__container {
     display: grid;
     grid-template-rows: min-content 6rem repeat(2, min-content); }
+    @media only screen and (max-width: 43.75em) {
+      .film__container {
+        grid-template-rows: min-content 4rem repeat(2, min-content); } }
   .film__img {
     width: 100%;
     height: 27rem;
     cursor: pointer; }
+    @media only screen and (max-width: 43.75em) {
+      .film__img {
+        height: 21rem; } }
     .film__img:hover {
       opacity: 0.9; }
   .film__title {
@@ -443,6 +476,9 @@ a:link,
     .header-container {
       width: 95%;
       margin: auto; } }
+  @media only screen and (max-width: 25em) {
+    .header-container {
+      grid-template-rows: 2.5rem 2rem 1.6rem; } }
 
 .header-line-1,
 .header-line-2,
@@ -457,6 +493,9 @@ a:link,
   margin-left: 1rem;
   grid-row-start: 1;
   grid-column-start: 3; }
+  @media only screen and (max-width: 31.25em) {
+    .header-line-1 {
+      margin-top: 0.6rem; } }
 
 .header-line-2 {
   grid-row-start: 2;
@@ -473,12 +512,16 @@ a:link,
   grid-row-start: 1;
   grid-column-start: 1;
   grid-column-end: 2; }
+  @media only screen and (max-width: 31.25em) {
+    .header-line-4 {
+      margin-top: 0.6rem; } }
 
 .header-1 {
   font-family: "EB Garamond", serif;
   font-size: 4rem;
   font-weight: 700;
   letter-spacing: 2px;
+  line-height: 6.5rem;
   color: white;
   padding: 1rem; }
   @media only screen and (max-width: 75em) {
@@ -496,8 +539,18 @@ a:link,
       white-space: nowrap; } }
   @media only screen and (max-width: 43.75em) {
     .header-1 {
-      font-size: 3rem;
-      white-space: nowrap; } }
+      font-size: 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .header-1 {
+      font-size: 2.5rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .header-1 {
+      font-size: 2rem;
+      line-height: 4.5rem; } }
+  @media only screen and (max-width: 25em) {
+    .header-1 {
+      font-size: 1.8rem;
+      line-height: 4rem; } }
 
 .header-2 {
   font-family: "EB Garamond", serif;
@@ -526,11 +579,18 @@ a:link,
       padding-left: 0; } }
   @media only screen and (max-width: 43.75em) {
     .header-2 {
-      font-size: 2.2rem;
-      line-height: 5rem;
-      white-space: nowrap;
-      text-align: center;
-      padding-left: 0; } }
+      font-size: 2.1rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .header-2 {
+      font-size: 1.6rem;
+      line-height: 4rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .header-2 {
+      font-size: 1.4rem;
+      line-height: 3rem; } }
+  @media only screen and (max-width: 25em) {
+    .header-2 {
+      font-size: 1.2rem; } }
 
 .header-3 {
   font-family: "Abril Fatface", sans-serif;
@@ -544,6 +604,15 @@ a:link,
   grid-row-start: 1;
   grid-column-start: 2;
   white-space: nowrap; }
+  @media only screen and (max-width: 37.5em) {
+    .header-3 {
+      font-size: 2rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .header-3 {
+      font-size: 1.5rem; } }
+  @media only screen and (max-width: 25em) {
+    .header-3 {
+      font-size: 1.2rem; } }
 
 .header-4 {
   font-family: "Abril Fatface", sans-serif;
@@ -567,9 +636,16 @@ a:link,
 .score-points,
 .logged-text,
 .films-logged {
+  font-family: "EB Garamond", serif;
   font-size: 2rem;
   color: white;
   justify-self: center; }
+  @media only screen and (max-width: 25em) {
+    .score-text,
+    .score-points,
+    .logged-text,
+    .films-logged {
+      font-size: 1.2rem; } }
 
 .score-text,
 .logged-text {
@@ -604,8 +680,7 @@ a:link,
     position: absolute;
     text-align: left;
     top: 20%;
-    left: 5%;
-    line-height: 6.5rem; }
+    left: 5%; }
     @media only screen and (max-width: 62.5em) {
       .hero-text {
         top: 10%; } }
@@ -614,6 +689,9 @@ a:link,
         text-align: center;
         left: 50%;
         transform: translate(-50%, 0); } }
+  @media only screen and (max-width: 31.25em) {
+    .hero {
+      height: 50vh; } }
 
 .stats {
   height: 6rem;
@@ -625,7 +703,10 @@ a:link,
   font-size: 2rem;
   align-content: center;
   grid-column-gap: 1rem; }
-  @media only screen and (max-width: 50em) {
+  @media only screen and (max-width: 31.25em) {
+    .stats {
+      height: 14rem; } }
+  @media only screen and (max-width: 37.5em) {
     .stats {
       grid-template-rows: 2rem 2rem;
       grid-template-columns: min-content min-content;
@@ -633,11 +714,19 @@ a:link,
       grid-column-gap: 10rem;
       text-align: center;
       justify-content: center; } }
+  @media only screen and (max-width: 31.25em) {
+    .stats {
+      grid-template-rows: repeat(4, 2rem);
+      grid-template-columns: min-content; } }
 
 .achievement-points {
   grid-column-start: 2;
   color: black; }
-  @media only screen and (max-width: 50em) {
+  @media only screen and (max-width: 37.5em) {
+    .achievement-points {
+      grid-row-start: 1;
+      grid-column-start: 1; } }
+  @media only screen and (max-width: 31.25em) {
     .achievement-points {
       grid-row-start: 1;
       grid-column-start: 1; } }
@@ -645,7 +734,11 @@ a:link,
 .point {
   grid-column-start: 3;
   color: black; }
-  @media only screen and (max-width: 50em) {
+  @media only screen and (max-width: 37.5em) {
+    .point {
+      grid-row-start: 2;
+      grid-column-start: 1; } }
+  @media only screen and (max-width: 31.25em) {
     .point {
       grid-row-start: 2;
       grid-column-start: 1; } }
@@ -653,18 +746,26 @@ a:link,
 .film-set-head {
   grid-column-start: 5;
   color: black; }
-  @media only screen and (max-width: 50em) {
+  @media only screen and (max-width: 37.5em) {
     .film-set-head {
       grid-row-start: 1;
       grid-column-start: 2; } }
+  @media only screen and (max-width: 31.25em) {
+    .film-set-head {
+      grid-row-start: 3;
+      grid-column-start: 1; } }
 
 .film-set {
   grid-column-start: 6;
   color: black; }
-  @media only screen and (max-width: 50em) {
+  @media only screen and (max-width: 37.5em) {
     .film-set {
       grid-row-start: 2;
       grid-column-start: 2; } }
+  @media only screen and (max-width: 31.25em) {
+    .film-set {
+      grid-row-start: 4;
+      grid-column-start: 1; } }
 
 .features {
   width: 100%;
@@ -676,6 +777,12 @@ a:link,
   @media only screen and (max-width: 50em) {
     .features {
       text-align: center; } }
+  @media only screen and (max-width: 37.5em) {
+    .features {
+      height: 30rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .features {
+      height: 25rem; } }
 
 .user-content {
   width: 80%;

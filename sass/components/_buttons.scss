@@ -28,7 +28,7 @@ a:link,
     background-color: $color-blue-light-2;
   }
 
-  @media only screen and(max-width: $bp-small) {
+  @media only screen and(max-width: $bp-medium-2) {
     left: 0;
   }
 }
@@ -105,6 +105,10 @@ a:link,
 
   &:hover {
     background-color: $color-green-light-2;
+  }
+
+  @media only screen and(max-width: $bp-small-3) {
+    display: none;
   }
 }
 
