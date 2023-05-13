@@ -9,6 +9,9 @@ a:link,
 .btn-1 {
   width: 15rem;
   border-radius: 5px;
+  font-family: $font-primary;
+  font-weight: 800;
+  font-size: 2rem;
   background-color: $color-blue-light-1;
   position: relative;
 
@@ -30,6 +33,11 @@ a:link,
 
   @media only screen and(max-width: $bp-medium-2) {
     left: 0;
+  }
+
+  @media only screen and(max-width: $bp-small-3) {
+    font-size: 1.8rem;
+    padding: 0.8rem 0.5rem;
   }
 }
 

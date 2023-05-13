@@ -122,6 +122,9 @@ a:link,
 .btn-1 {
   width: 15rem;
   border-radius: 5px;
+  font-family: "EB Garamond", serif;
+  font-weight: 800;
+  font-size: 2rem;
   background-color: #77a7eb;
   position: relative;
   border: none;
@@ -140,6 +143,10 @@ a:link,
   @media only screen and (max-width: 50em) {
     .btn-1 {
       left: 0; } }
+  @media only screen and (max-width: 31.25em) {
+    .btn-1 {
+      font-size: 1.8rem;
+      padding: 0.8rem 0.5rem; } }
 
 .pre-btn,
 .nxt-btn {
@@ -577,8 +584,12 @@ a:link,
     .header-1 {
       font-size: 1.8rem;
       line-height: 4rem; } }
+  @media only screen and (max-width: 21.875em) {
+    .header-1 {
+      font-size: 1.5rem; } }
 
-.header-2 {
+.header-2,
+.header-2-v2 {
   font-family: "EB Garamond", serif;
   font-size: 3.5rem;
   font-weight: 700;
@@ -589,33 +600,48 @@ a:link,
   padding-top: 2.5rem;
   padding-bottom: 2rem;
   color: white; }
-  @media only screen and (max-width: 62.5em) {
-    .header-2 {
-      font-size: 3rem; } }
-  @media only screen and (max-width: 56.25em) {
-    .header-2 {
-      font-size: 2.5rem;
-      line-height: 5.5rem; } }
-  @media only screen and (max-width: 50em) {
-    .header-2 {
-      font-size: 2.5rem;
-      line-height: 5rem;
-      white-space: nowrap;
+
+@media only screen and (max-width: 62.5em) {
+  .header-2 {
+    font-size: 3rem; } }
+
+@media only screen and (max-width: 56.25em) {
+  .header-2 {
+    font-size: 2.5rem;
+    line-height: 5.5rem; } }
+
+@media only screen and (max-width: 50em) {
+  .header-2 {
+    font-size: 2.5rem;
+    line-height: 5rem;
+    white-space: nowrap;
+    text-align: center;
+    padding-left: 0; } }
+
+@media only screen and (max-width: 43.75em) {
+  .header-2 {
+    font-size: 2.1rem; } }
+
+@media only screen and (max-width: 37.5em) {
+  .header-2 {
+    display: none; } }
+
+.header-2-v2 {
+  display: none; }
+  @media only screen and (max-width: 37.5em) {
+    .header-2-v2 {
+      display: block;
+      font-size: 2rem;
+      line-height: 3rem;
+      padding-top: 2rem;
+      padding-bottom: 0.8rem;
       text-align: center;
       padding-left: 0; } }
-  @media only screen and (max-width: 43.75em) {
-    .header-2 {
-      font-size: 2.1rem; } }
-  @media only screen and (max-width: 37.5em) {
-    .header-2 {
-      font-size: 1.6rem;
-      line-height: 4rem; } }
-  @media only screen and (max-width: 31.25em) {
-    .header-2 {
-      font-size: 1.4rem;
-      line-height: 3rem; } }
   @media only screen and (max-width: 25em) {
-    .header-2 {
+    .header-2-v2 {
+      font-size: 1.5rem; } }
+  @media only screen and (max-width: 21.875em) {
+    .header-2-v2 {
       font-size: 1.2rem; } }
 
 .header-3 {
@@ -653,10 +679,16 @@ a:link,
   color: white;
   margin-bottom: 0.7rem;
   text-transform: uppercase; }
+  @media only screen and (max-width: 31.25em) {
+    .explain-header {
+      font-size: 1rem; } }
 
 .explain-text {
   font-size: 1.2rem;
   color: white; }
+  @media only screen and (max-width: 31.25em) {
+    .explain-text {
+      font-size: 1rem; } }
 
 .score-text,
 .score-points,

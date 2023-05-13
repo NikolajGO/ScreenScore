@@ -104,9 +104,14 @@
     font-size: 1.8rem;
     line-height: 4rem;
   }
+
+  @media only screen and(max-width: $bp-smallest-2) {
+    font-size: 1.5rem;
+  }
 }
 
-.header-2 {
+.header-2,
+.header-2-v2 {
   font-family: $font-primary;
   font-size: 3.5rem;
   font-weight: 700;
@@ -117,7 +122,9 @@
   padding-top: 2.5rem;
   padding-bottom: 2rem;
   color: white;
+}
 
+.header-2 {
   @media only screen and(max-width: $bp-large) {
     font-size: 3rem;
   }
@@ -140,16 +147,46 @@
   }
 
   @media only screen and(max-width: $bp-small-2) {
-    font-size: 1.6rem;
-    line-height: 4rem;
+    display: none;
+    // font-size: 1.6rem;
+    // line-height: 4rem;
   }
 
-  @media only screen and(max-width: $bp-small-3) {
-    font-size: 1.4rem;
+  // @media only screen and(max-width: $bp-small-3) {
+  //   display: none;
+  //   // font-size: 1.4rem;
+  //   // line-height: 3rem;
+  // }
+
+  // @media only screen and(max-width: $bp-smallest) {
+  //   font-size: 1.2rem;
+  // }
+
+  // @media only screen and(max-width: $bp-smallest-2) {
+  //   font-size: 1rem;
+  // }
+}
+
+.header-2-v2 {
+  display: none;
+
+  @media only screen and(max-width: $bp-small-2) {
+    display: block;
+    font-size: 2rem;
     line-height: 3rem;
+
+    padding-top: 2rem;
+    padding-bottom: 0.8rem;
+
+    text-align: center;
+    padding-left: 0;
   }
 
   @media only screen and(max-width: $bp-smallest) {
+    font-size: 1.5rem;
+  }
+
+  @media only screen and(max-width: $bp-smallest-2) {
     font-size: 1.2rem;
   }
 }
@@ -196,15 +233,23 @@
   color: white;
   margin-bottom: 0.7rem;
   text-transform: uppercase;
+
+  @media only screen and(max-width: $bp-small-3) {
+    font-size: 1rem;
+  }
 }
 
 .explain-text {
   font-size: 1.2rem;
   color: white;
+
+  @media only screen and(max-width: $bp-small-3) {
+    font-size: 1rem;
+  }
 }
 
 //////////////////////////
-///USER OAGE/////////////
+///USER PAGE/////////////
 
 .score-text,
 .score-points,
