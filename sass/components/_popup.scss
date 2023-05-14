@@ -4,7 +4,6 @@
   width: 70rem;
   height: 56rem;
   position: fixed;
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -18,35 +17,34 @@
     // width: 63rem;
     // height: 50rem;
 
-
     top: 15%;
     transform: translate(-55%, 0);
-    scale: .9;
+    scale: 0.9;
     transform-origin: center;
   }
 
   @media only screen and(max-width: $bp-small-1) {
-    scale: .8;
+    scale: 0.8;
     transform: translate(-62%, 0);
   }
 
   @media only screen and(max-width: $bp-small-2) {
-    scale: .7;
+    scale: 0.7;
     transform: translate(-70%, 0);
   }
 
   @media only screen and(max-width: $bp-small-3) {
-    scale: .6;
+    scale: 0.6;
     transform: translate(-83%, 0);
   }
 
   @media only screen and(max-width: $bp-smallest) {
-    scale: .5;
+    scale: 0.5;
     transform: translate(-100%, 0);
   }
 
   @media only screen and(max-width: $bp-smallest-2) {
-    scale: .4;
+    scale: 0.4;
     transform: translate(-125%, 0);
   }
 }

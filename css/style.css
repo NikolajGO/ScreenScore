@@ -335,7 +335,6 @@ a:link,
   width: 70rem;
   height: 56rem;
   position: fixed;
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -347,27 +346,27 @@ a:link,
     .achpopup-box {
       top: 15%;
       transform: translate(-55%, 0);
-      scale: .9;
+      scale: 0.9;
       transform-origin: center; } }
   @media only screen and (max-width: 43.75em) {
     .achpopup-box {
-      scale: .8;
+      scale: 0.8;
       transform: translate(-62%, 0); } }
   @media only screen and (max-width: 37.5em) {
     .achpopup-box {
-      scale: .7;
+      scale: 0.7;
       transform: translate(-70%, 0); } }
   @media only screen and (max-width: 31.25em) {
     .achpopup-box {
-      scale: .6;
+      scale: 0.6;
       transform: translate(-83%, 0); } }
   @media only screen and (max-width: 25em) {
     .achpopup-box {
-      scale: .5;
+      scale: 0.5;
       transform: translate(-100%, 0); } }
   @media only screen and (max-width: 21.875em) {
     .achpopup-box {
-      scale: .4;
+      scale: 0.4;
       transform: translate(-125%, 0); } }
 
 .ticket-container {
@@ -762,9 +761,6 @@ a:link,
   background-image: linear-gradient(90deg, #181818, transparent), url(../img/hero_v1.webp);
   background-size: cover;
   position: relative; }
-  @media only screen and (max-width: 62.5em) {
-    .hero {
-      height: 50vh; } }
   @media only screen and (max-width: 37.5em) {
     .hero {
       height: 40vh; } }
