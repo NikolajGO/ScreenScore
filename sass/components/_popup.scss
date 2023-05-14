@@ -4,6 +4,7 @@
   width: 70rem;
   height: 56rem;
   position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -13,25 +14,60 @@
   grid-template-rows: repeat(2, 1fr) min-content;
   grid-template-columns: 1fr;
 
+  @media only screen and(max-width: $bp-medium-2) {
+    // width: 63rem;
+    // height: 50rem;
+
+
+    top: 15%;
+    transform: translate(-55%, 0);
+    scale: .9;
+    transform-origin: center;
+  }
+
   @media only screen and(max-width: $bp-small-1) {
-    width: 40rem;
-    height: 32rem;
+    scale: .8;
+    transform: translate(-62%, 0);
+  }
+
+  @media only screen and(max-width: $bp-small-2) {
+    scale: .7;
+    transform: translate(-70%, 0);
+  }
+
+  @media only screen and(max-width: $bp-small-3) {
+    scale: .6;
+    transform: translate(-83%, 0);
+  }
+
+  @media only screen and(max-width: $bp-smallest) {
+    scale: .5;
+    transform: translate(-100%, 0);
+  }
+
+  @media only screen and(max-width: $bp-smallest-2) {
+    scale: .4;
+    transform: translate(-125%, 0);
   }
 }
 
 .ticket-container {
-  width: 35rem;
-  height: 17rem;
+  width: 50%;
+  //height: 32%;
   justify-self: center;
   transform: rotate(10deg);
 
   grid-row-start: 3;
 
-  @media only screen and(max-width: $bp-small-1) {
-    width: 20rem;
-    height: 10rem;
-    padding-top: 0.8rem;
-  }
+  // @media only screen and(max-width: $bp-medium-2) {
+  //   scale: .9;
+  // }
+
+  // @media only screen and(max-width: $bp-small-1) {
+  //   width: 20rem;
+  //   height: 10rem;
+  //   padding-top: 0.8rem;
+  // }
 }
 
 .ticket-container-img {
@@ -48,20 +84,22 @@
 }
 
 .ticket-container-grid {
-  width: 35rem;
-  height: 17rem;
+  width: 50%;
+  height: 100%;
   position: absolute;
   display: grid;
+  left: 50%;
+  transform: translate(-50%, 0);
 
-  transform: rotate(1deg);
+  //transform: rotate(1deg);
   grid-template-rows: 1fr repeat(3, min-content) 1fr;
 
   z-index: 15;
 
-  @media only screen and(max-width: $bp-small-1) {
-    width: 20rem;
-    height: 10rem;
-  }
+  // @media only screen and(max-width: $bp-small-1) {
+  //   width: 20rem;
+  //   height: 10rem;
+  // }
 }
 
 .achpopup-box-congratz {
@@ -74,7 +112,7 @@
 .achpopup-box-explain {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 800;
-  font-size: 2.2rem;
+  font-size: 200%;
   margin-top: -1rem;
   padding-bottom: 1rem;
   justify-self: center;
@@ -83,14 +121,14 @@
   grid-row-start: 2;
   z-index: 10;
 
-  @media only screen and(max-width: $bp-small-1) {
-    font-size: 1.8rem;
-  }
+  // @media only screen and(max-width: $bp-small-1) {
+  //   font-size: 1.8rem;
+  // }
 }
 
 .achpopup-box-point {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 3.5rem;
+  font-size: 350%;
   font-weight: 800;
   margin-top: -1rem;
   justify-self: center;
@@ -99,36 +137,36 @@
   grid-row-start: 3;
   z-index: 10;
 
-  @media only screen and(max-width: $bp-small-1) {
-    font-size: 2rem;
-  }
+  // @media only screen and(max-width: $bp-small-1) {
+  //   font-size: 2rem;
+  // }
 }
 
 .achpopup-box-earned {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 2rem;
+  font-size: 200%;
   font-weight: 800;
   grid-row-start: 4;
   z-index: 10;
   justify-self: center;
   color: black;
 
-  @media only screen and(max-width: $bp-small-1) {
-    font-size: 1.8rem;
-  }
+  // @media only screen and(max-width: $bp-small-1) {
+  //   font-size: 1.8rem;
+  // }
 }
 
-.achpopup-box-bg {
-  width: 100%;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -10;
+// .achpopup-box-bg {
+//   width: 100%;
+//   position: fixed;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   z-index: -10;
 
-  grid-row-start: 1;
-  grid-row-end: -1;
-}
+//   grid-row-start: 1;
+//   grid-row-end: -1;
+// }
 
 .overlay {
   position: fixed;

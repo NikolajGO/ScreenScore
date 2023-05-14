@@ -265,7 +265,7 @@ a:link,
     .navbar-links a {
       font-family: "EB Garamond", serif;
       font-size: 1.5rem;
-      font-weight: 300;
+      font-weight: 800;
       color: white;
       text-decoration: none;
       display: inline-block;
@@ -297,11 +297,45 @@ a:link,
     .burger-menu {
       display: block; } }
 
+.burger-navigation-checkbox {
+  display: none; }
+  @media only screen and (max-width: 50em) {
+    .burger-navigation-checkbox {
+      display: block; } }
+
+.burger-navigation-nav {
+  height: 40vh;
+  width: 100%;
+  position: absolute;
+  top: 5rem;
+  right: 0;
+  background-image: linear-gradient(90deg, #181818, #2e2e2e);
+  z-index: 10000; }
+
+.burger-navigation-list {
+  position: relative;
+  top: 10%;
+  left: 10%; }
+  .burger-navigation-list li,
+  .burger-navigation-list a {
+    font-family: "EB Garamond", serif;
+    font-size: 3rem;
+    line-height: 6rem;
+    font-weight: 800;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 0 2rem; }
+    .burger-navigation-list li:active,
+    .burger-navigation-list a:active {
+      scale: 1.1; }
+
 /* popup */
 .achpopup-box {
   width: 70rem;
   height: 56rem;
   position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -309,22 +343,38 @@ a:link,
   display: grid;
   grid-template-rows: repeat(2, 1fr) min-content;
   grid-template-columns: 1fr; }
+  @media only screen and (max-width: 50em) {
+    .achpopup-box {
+      top: 15%;
+      transform: translate(-55%, 0);
+      scale: .9;
+      transform-origin: center; } }
   @media only screen and (max-width: 43.75em) {
     .achpopup-box {
-      width: 40rem;
-      height: 32rem; } }
+      scale: .8;
+      transform: translate(-62%, 0); } }
+  @media only screen and (max-width: 37.5em) {
+    .achpopup-box {
+      scale: .7;
+      transform: translate(-70%, 0); } }
+  @media only screen and (max-width: 31.25em) {
+    .achpopup-box {
+      scale: .6;
+      transform: translate(-83%, 0); } }
+  @media only screen and (max-width: 25em) {
+    .achpopup-box {
+      scale: .5;
+      transform: translate(-100%, 0); } }
+  @media only screen and (max-width: 21.875em) {
+    .achpopup-box {
+      scale: .4;
+      transform: translate(-125%, 0); } }
 
 .ticket-container {
-  width: 35rem;
-  height: 17rem;
+  width: 50%;
   justify-self: center;
   transform: rotate(10deg);
   grid-row-start: 3; }
-  @media only screen and (max-width: 43.75em) {
-    .ticket-container {
-      width: 20rem;
-      height: 10rem;
-      padding-top: 0.8rem; } }
 
 .ticket-container-img {
   width: 100%;
@@ -337,17 +387,14 @@ a:link,
   z-index: 20; }
 
 .ticket-container-grid {
-  width: 35rem;
-  height: 17rem;
+  width: 50%;
+  height: 100%;
   position: absolute;
   display: grid;
-  transform: rotate(1deg);
+  left: 50%;
+  transform: translate(-50%, 0);
   grid-template-rows: 1fr repeat(3, min-content) 1fr;
   z-index: 15; }
-  @media only screen and (max-width: 43.75em) {
-    .ticket-container-grid {
-      width: 20rem;
-      height: 10rem; } }
 
 .achpopup-box-congratz {
   font-size: 5rem;
@@ -358,51 +405,32 @@ a:link,
 .achpopup-box-explain {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 800;
-  font-size: 2.2rem;
+  font-size: 200%;
   margin-top: -1rem;
   padding-bottom: 1rem;
   justify-self: center;
   color: black;
   grid-row-start: 2;
   z-index: 10; }
-  @media only screen and (max-width: 43.75em) {
-    .achpopup-box-explain {
-      font-size: 1.8rem; } }
 
 .achpopup-box-point {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 3.5rem;
+  font-size: 350%;
   font-weight: 800;
   margin-top: -1rem;
   justify-self: center;
   color: black;
   grid-row-start: 3;
   z-index: 10; }
-  @media only screen and (max-width: 43.75em) {
-    .achpopup-box-point {
-      font-size: 2rem; } }
 
 .achpopup-box-earned {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 2rem;
+  font-size: 200%;
   font-weight: 800;
   grid-row-start: 4;
   z-index: 10;
   justify-self: center;
   color: black; }
-  @media only screen and (max-width: 43.75em) {
-    .achpopup-box-earned {
-      font-size: 1.8rem; } }
-
-.achpopup-box-bg {
-  width: 100%;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -10;
-  grid-row-start: 1;
-  grid-row-end: -1; }
 
 .overlay {
   position: fixed;
@@ -734,22 +762,26 @@ a:link,
   background-image: linear-gradient(90deg, #181818, transparent), url(../img/hero_v1.webp);
   background-size: cover;
   position: relative; }
+  @media only screen and (max-width: 62.5em) {
+    .hero {
+      height: 50vh; } }
+  @media only screen and (max-width: 37.5em) {
+    .hero {
+      height: 40vh; } }
+  @media only screen and (max-width: 31.25em) {
+    .hero {
+      height: 30vh; } }
   .hero-text {
     position: absolute;
     text-align: left;
     top: 20%;
     left: 5%; }
-    @media only screen and (max-width: 62.5em) {
-      .hero-text {
-        top: 10%; } }
     @media only screen and (max-width: 50em) {
       .hero-text {
+        top: 10%;
         text-align: center;
         left: 50%;
         transform: translate(-50%, 0); } }
-  @media only screen and (max-width: 31.25em) {
-    .hero {
-      height: 50vh; } }
 
 .stats {
   height: 6rem;

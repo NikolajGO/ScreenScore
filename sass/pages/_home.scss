@@ -8,26 +8,35 @@
   background-size: cover;
   position: relative;
 
+  @media only screen and(max-width: $bp-large) {
+    height: 50vh;
+  }
+
+  @media only screen and(max-width: $bp-small-2) {
+    height: 40vh;
+  }
+
+  @media only screen and(max-width: $bp-small-3) {
+    height: 30vh;
+  }
+
   &-text {
     position: absolute;
     text-align: left;
     top: 20%;
     left: 5%;
 
-    @media only screen and(max-width: $bp-large) {
-      top: 10%;
-    }
+
 
     @media only screen and(max-width: $bp-medium-2) {
+      top: 10%;
       text-align: center;
       left: 50%;
       transform: translate(-50%, 0);
     }
   }
 
-  @media only screen and(max-width: $bp-small-3) {
-    height: 50vh;
-  }
+
 }
 
 ////STATS//////

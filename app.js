@@ -396,6 +396,9 @@ const closeOverlay = document.querySelector(".overlay");
 const achPopup = document.querySelector(".achpopup-box");
 const overlay = document.querySelector(".overlay");
 
+const burgerBtn = document.querySelector(".burger-menu");
+const burgerNav = document.querySelector(".burger-navigation");
+
 const filmsContainer = [...document.querySelectorAll(".films__container")];
 const nxtBtn = [...document.querySelectorAll(".nxt-btn")];
 const preBtn = [...document.querySelectorAll(".pre-btn")];
@@ -767,3 +770,17 @@ for (let i = 0; i < filmsData.length; i++) {
   const id = filmsData[i].id;
   clickTricker(i, id);
 }
+
+
+/////////////////////////////////////
+////BUERGR MENU //////////////////////
+
+const burgerClickTricker = function () {
+  burgerBtn.addEventListener("click", function () {
+    // Toggle hidden class
+    burgerNav.classList.toggle("hidden");
+
+  })
+}
+
+burgerClickTricker()
